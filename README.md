@@ -11,5 +11,8 @@ Proyecto de preferencias
 ### Capturas de pantalla
 
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+![Image](https://github.com/IsmarRomero/flutter-preferents/blob/master/example/screen1.png)
+
+![Image](https://github.com/IsmarRomero/flutter-preferents/blob/master/example/screen2.png)
+
+![Image](https://github.com/IsmarRomero/flutter-preferents/blob/master/example/screen3.png)
