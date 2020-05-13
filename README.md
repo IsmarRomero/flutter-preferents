@@ -5,6 +5,8 @@ Proyecto de preferencias
 ### Tecnologias empleadas
 
 * flutter
+* Singleton
+* Shared Preferents
 
 ### Capturas de pantalla
 
