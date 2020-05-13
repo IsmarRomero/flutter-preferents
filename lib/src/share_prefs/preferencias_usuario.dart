@@ -1,4 +1,5 @@
 import 'package:flutter/widgets.dart';
+import 'package:preferenciasusuario/src/pages/home_page.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class PreferenciasUsuario {
@@ -18,10 +19,6 @@ class PreferenciasUsuario {
     WidgetsFlutterBinding.ensureInitialized();
     this._prefs = await SharedPreferences.getInstance();
   }
-  // Ninguna de estas propiedades se usa
-  // bool _colorSecundario;
-  // int _genero;
-  // String _nombre;
 
   // GET y SET Genero
   get genero {
@@ -31,8 +28,32 @@ class PreferenciasUsuario {
   set genero (int value){
     _prefs.setInt('genero', value);
   }
+    // GET y SET colorSecundario
+  get colorSecundario {
+    return _prefs.getBool('colorSecundario') ?? false;
+  }
 
+  set colorSecundario (bool value){
+    _prefs.setBool('colorSecundario', value);
+  }
 
+   // GET y SET nombreUsuario
+  get nombreUsuario {
+    return _prefs.getString('nombreUsuario') ?? '';
+  }
+
+  set nombreUsuario (String value){
+    _prefs.setString('nombreUsuario', value);
+  }
+
+ // GET y SET ultimaPagina
+  get ultimaPagina {
+    return _prefs.getString('ultimaPagina') ?? HomePage.routeName;
+  }
+
+  set ultimaPagina (String value){
+    _prefs.setString('ultimaPagina', value);
+  }
 
 
 }
